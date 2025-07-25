@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work Experience | Suraj Varne Sheela</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <img src="profilepic.jpg" alt="Suraj Varne Sheela Profile Photo" class="profile-pic" />
+    </div>
+    <div class="header-center">
+      <h1>Suraj Varne Sheela</h1>
+      <p class="tagline">Work Experience</p>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="work.html">Work Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="experience-container">
+    <h2> Explore My Work Experience</h2>
+
+    <div class="logo-links">
+      <img src="unt_logo.png" alt="UNT Logo" class="company-logo" title="UNT" onclick="showExperience('unt')" />
+      <img src="taskus_logo.png" alt="TaskUs Logo" class="company-logo" title="TaskUs" onclick="showExperience('taskus')" />
+    </div>
+
+    <div id="unt" class="experience-details">
+      <div class="experience-card">
+        <img src="unt_work.jpg" alt="UNT Work Image" />
+        <h3>University of North Texas</h3>
+        <h4>Software Systems Engineer</h4>
+        <p> • Streamlined the Jenkins CI/CD pipelines with Docker & Kubernetes, deploying 200+ machine configurations with IaC, cutting
+            build time by 35.3% & improving stability by 23% through parallelization & containerization, boosting system efficiency.
+        </p>
+        <p>
+            • Automated deployment of 1000+ laptops with PXE & custom shell scripts, managed 50+ weekly ServiceNow tickets & provided
+            support to over 300+ UNT-SYSTEM employees, resulting in a 8.7% reduction in downtime & increasing the MTTR by 18%.
+        </p>
+        <p>
+            • Implemented proactive system monitoring with Prometheus & Grafana, resulting in a 4.3% improvement in throughput.
+        </p>
+        <div class="clear"></div>
+      </div>
+      <div class="experience-card">
+        <img src="unt_work1.jpg" alt="TA Work Image" />
+        <h3>University of North Texas</h3>
+        <h4>Undergraduate Teaching Assistant - Computer Science</h4>
+        <p>• Mentored 500+ students, delivered 200+ lectures, & 50+ online-tutoring sessions on core topics including Python, Java, C++,
+            SQL, & algorithms; resolved 200+ code issues, boosting quiz scores by 33%, & achieving a 4.8/5 satisfaction rating.</p>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <div id="taskus" class="experience-details" style="display: none;">
+      <div class="experience-card">
+        <img src="taskus_work.JPG" alt="TaskUs Work Image" />
+        <h3>TaskUs</h3>
+        <h4>AI Applications Developer Intern</h4>
+        <p>• Engineered Byte, an AI chatbot built with Python & HuggingFace Transformers for semantic parsing, integrated via Flask &
+            SQLAlchemy with a PostgreSQL pipeline, optimizing interface through quantization & multi-threading to manual data entry by
+            24%, lower API latency by 15%, & increasing user engagement by 42% across 350-concurrent queries.
+        </p>
+        <p>
+           • Led the integration of 85,000+ records into an AI-driven lead scoring system in Salesforce using Pandas & scikit-learn,
+           leveraging statistical metrics & supervised learning algorithms to boost lead conversion & forecast accuracy by 9%.
+        </p>
+        <p>
+           • Executed UAT in Salesforce with bug tracking, fixing 29 critical issues affecting 2000+ users, & performed A/B testing plus
+           regression analysis on marketing automation platforms (6sense, Seismic) to drive a 28.67% boost in email open rates in platforms.
+        </p>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Connect with me:</p>
+    <div class="footer-buttons">
+      <a href="https://linkedin.com/in/your-linkedin" target="_blank" class="btn">LinkedIn</a>
+      <a href="https://github.com/SuraajVarne" target="_blank" class="btn">GitHub</a>
+      <a href="mailto:suraajvarnesheela@gmail.com" class="btn">Send Email</a>
+    </div>
+    <p>© 2025 Suraj Varne Sheela. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showExperience(id) {
+      document.getElementById("unt").style.display = "none";
+      document.getElementById("taskus").style.display = "none";
+      document.getElementById(id).style.display = "block";
+    }
+  </script>
+
+</body>
+</html>

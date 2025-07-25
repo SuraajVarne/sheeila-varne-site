@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sheeila Varne</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <img src="profilepic.jpg" alt="Suraj Varne Sheela Profile Photo" class="profile-pic" />
+        </div>
+
+        <div class="header-center">
+            <h1>Sheeila Varne</h1>
+            <p class="tagline">Strategic Finance Leader &bull; P&L Management Expert &bull; M&A & Capital Planning</p>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="projects.html">Work Experience</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about-text" class="about-center">
+            <h2>About Me</h2>
+            <p>
+                I’m a senior finance leader with over 19 years of experience driving commercial finance, operational transformation, and strategic planning across India, West Asia, and APAC. My journey spans global firms like CBRE, JLL, and Johnson Controls, and my work has spanned corporate real estate, banking, and high-growth services sectors. 
+            </p>
+            <p>
+                Across every role, I’ve focused on connecting finance to the bigger business picture — managing portfolios of ₹100Cr to ₹200Cr+, influencing capital investments of ₹400Cr+, and leading cost-saving and compliance initiatives that delivered ₹50Cr+ in measurable value. I’ve worked closely with cross-border leadership teams, built finance and ops functions from the ground up, and led teams of over 100 people through complex transformations.
+            </p>
+            <p>
+                My strength lies in creating clarity and control in fast-moving environments — building smart financial systems, tightening operations, and aligning numbers to outcomes. Whether it’s month-end close, vendor negotiations, budget strategy, or board-level decision support — I bring a hands-on, business-first mindset to the table.
+            </p>
+            <p>
+                I’m currently exploring full-time leadership roles — Director, VP, CFO — and also open to consulting, advisory, or project-based opportunities where I can drive lasting financial and operational impact.
+            </p>
+        </section>
+        <div class="section-image">
+    <img src="bkg1.jpeg" alt="Section Divider Image" class="divider-image" />
+</div>
+        <section id="testimonials" class="testimonials-carousel">
+    <h2>Testimonials</h2>
+    <div class="carousel-wrapper">
+        <button class="carousel-btn left" onclick="prevTestimonial()">&#10094;</button>
+
+        <div class="testimonial-display" id="testimonial-display">
+            <div class="testimonial">
+                <p class="quote">“I had the pleasure of working with Sheeila for Deutsche Bank at CBRE, where she consistently demonstrated deep financial expertise, strategic thinking, and a collaborative spirit. Whether it was building complex financial models, driving budgeting processes, or providing clear insights to support key business decisions, Sheeila brought both precision and clarity to every task.”</p>
+                <p class="quote">“What sets Sheeila apart is not just technical skill, but a genuine ability to communicate financial concepts across teams and at leadership levels. They were proactive, solutions-focused, and always willing to go the extra mile to support both team and company goals.”</p>
+                <p class="attribution">— Ravi Chaubey, Founder & CEO | Former Manager at CBRE</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">“I had worked with Sheeila closely, and I am confident that she’s one of the strongest finance professionals I’ve come across. Her expertise in commercial finance, budgeting, and strategic planning is top-notch.”</p>
+                <p class="quote">“She led large teams across regions, managed complex operations with ease, and always had a sharp eye on cost efficiency and results. Her leadership, stakeholder management, and ability to drive outcomes under pressure truly stand out.”</p>
+                <p class="attribution">— Cdr Sanjeev Gupta (Retd), Veteran Leader | Former Manager</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">“Sheeila has been an excellent professional who is thorough with her job due to her immense knowledge of the subject. The quality of work gets enhanced, resulting in accolades for the team and a positive impact among colleagues.”</p>
+                <p class="quote">“She is an asset to the organization. I wish her wonderful years ahead.”</p>
+                <p class="attribution">— Gurpreet Taneja, VP - Customer Relations & Operations</p>
+            </div>
+        </div>
+
+        <button class="carousel-btn right" onclick="nextTestimonial()">&#10095;</button>
+    </div>
+</section>
+<script>
+    const testimonials = document.querySelectorAll('#testimonial-display .testimonial');
+    let current = 0;
+
+    function showTestimonial(index) {
+        testimonials.forEach((el, i) => {
+            el.style.display = i === index ? 'block' : 'none';
+        });
+    }
+
+    function nextTestimonial() {
+        current = (current + 1) % testimonials.length;
+        showTestimonial(current);
+    }
+
+    function prevTestimonial() {
+        current = (current - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(current);
+    }
+
+    // Initialize carousel
+    showTestimonial(current);
+</script>
+
+    </main>
+
+    <footer>
+        <p>Connect with me:</p>
+        <div class="footer-buttons">
+            <a href="https://www.linkedin.com/in/sheeilavarne/" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
+            <a href="mailto:sheeilavarne@gmail.com" class="btn">Send Email</a>
+        </div>
+        <p>© 2025 Sheeila Varne. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
